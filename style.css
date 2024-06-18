@@ -1,0 +1,61 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #2C3E50;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hover-me, .back {
+  font-size: 25px;
+  line-height: 68px;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  transition: margin 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.hover-me {
+  color: #2C3E50;
+  background: #fff;
+  margin-top: -80px;
+  margin-left: -12px;
+}
+
+.back {
+  background: #944FB2;
+}
+
+.center:hover .hover-me {
+  background: #944FB2;
+  color: white;
+  margin-top: -60px;
+  margin-left: 15px;
+}
+
+.center:hover .back {
+  background: #fff;
+}
